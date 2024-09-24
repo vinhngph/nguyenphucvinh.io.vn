@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <title>Better YouTube</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card acrylic-card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Better YouTube</h3>
+                        <form name="getLink">
+                            <div class="mb-3">
+                                <label for="yt_link" class="form-label">Link</label>
+                                <input type="text" class="form-control" name="yt_link" id="yt_link"
+                                    placeholder="Enter YouTube link" required>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-secondary btn-acrylic">Watch</button>
+                            </div>
+                        </form>
+                        <div class="error mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-10">
+                <div class="ratio ratio-16x9 player"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

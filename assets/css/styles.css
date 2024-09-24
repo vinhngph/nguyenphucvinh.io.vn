@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: serif;
+}
+
+body {
+    background-color: #333;
+}
+
+.nav-bar {
+    background-color: #222;
+}
+
+.nav-bar .nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 4em;
+    justify-content: center;
+}
+
+.nav-bar .nav-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 100px;
+}
+
+.nav-bar .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-bar .nav-item:hover {
+    background-color: #555;
+}
+
+.card {
+    display: flex;
+    background-color: #444;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card .card-content>p {
+    margin-top: 20px;
+}
+
+.card .card-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card.projects {
+    display: block;
+}
+
+.card-projects {
+    margin-top: 20px;
+}
+
+.card-projects>ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.card-projects>ul>li {
+    border: 5px solid #555;
+    border-radius: 10px;
+}
+
+.card-projects>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.card-projects>ul>li:hover {
+    background-color: #555;
+}
+
+.card.contacts ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.card.contacts ul>li {
+    display: flex;
+    margin-top: 10px;
+}
+
+.card.contacts ul>li>p {
+    margin-right: 10px;
+}
+
+.card.contacts ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.space {
+    width: 20px;
+}
+
+@media (max-width: 46.1875em) {
+    .nav-bar {
+        display: none;
+    }
+}
