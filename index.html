@@ -1,83 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyễn Phúc Vinh</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+    <script src="https://kit.fontawesome.com/bb03a877e4.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: monospace;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="nav-bar">
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="#about-me">About me</a>
-            </li>
-            <li class="nav-item">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contacts">Contacts</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="card about-me" id="about-me">
-        <div class="card-content">
-            <h1>About me</h1>
-            <p>My name is Nguyễn Phúc Vinh and I am a back-end developer. I have worked on various projects ranging from simple websites to complex web applications. I am passionate about web development and always looking for new challenges to improve my skills. Feel free to contact me.</p>
-        </div>
-
-        <div class="card-img">
-            <img src="./assets/img/avatar.png" alt="about-me">
-        </div>
-    </div>
-
-    <div class="card projects" id="projects">
-        <div class="card-content">
-            <h1>Projects</h1>
-            <p>Here are some of the projects I have worked on:</p>
-        </div>
-        <div class="card-projects">
-            <ul>
-                <li>
-                    <a href="https://github.com/vinhngph/uTube">uTube</a>
+    <nav class="navbar navbar-expand-lg border border-secondary">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About me</a>
                 </li>
-                <div class="space"></div>
-                <li>
-                    <a href="https://github.com/vinhngph/MovieSystem">Movie System</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <div class="space"></div>
-                <li>
-                    <a href="https://nguyenphucvinh.io.vn/projects/Minesweeper/index.html">Minesweeper</a>
-                </li>
-                <div class="space"></div>
-                <li>
-                    <a href="https://nguyenphucvinh.io.vn/projects/BetterYouTube/index.html">Better YouTube</a>
-                </li>
-                <div class="space"></div>
-                <li>
-                    <a href="https://github.com/vinhngph/Vinz">Discord Bot</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contacts</a>
                 </li>
             </ul>
         </div>
-    </div>
+    </nav>
 
-    <div class="card contacts" id="contacts">
-        <div class="card-content">
-            <h1>Contacts</h1>
+    <div class="container mt-5">
+        <div class="card mb-5" id="about-me">
+            <div class="row g-0">
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h2 class="card-title">About me</h2>
+                        <p class="card-text">My name is Nguyễn Phúc Vinh and I am a back-end developer. I have worked on
+                            various projects ranging from simple websites to complex web applications. I am passionate
+                            about web development and always looking for new challenges to improve my skills. Feel free
+                            to contact me.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <img src="./assets/img/avatar.png" class="img-fluid rounded-start" alt="about-me">
+                </div>
+            </div>
+        </div>
 
-            <ul>
-                <li>
-                    <p>Mail: </p><a href="mailto:contact@nguyenphucvinh.io.vn">contact@nguyenphucvinh.io.vn</a>
-                </li>
-                <li>
-                    <p>GitHub: </p><a href="https://github.com/vinhngph">https://github.com/vinhngph</a>
-                </li>
-            </ul>
+        <div class="card mb-5" id="projects">
+            <div class="card-body">
+                <h2 class="card-title">Projects</h2>
+                <p class="card-text">Here are some of the projects I have worked on:</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fa-regular fa-square-minus"></i> <a
+                            class="text-decoration-none text-success" href="https://github.com/vinhngph/uTube">uTube</a>
+                    </li>
+                    <li class="list-group-item"><i class="fa-regular fa-square-minus"></i> <a
+                            class="text-decoration-none text-success"
+                            href="https://github.com/vinhngph/MovieSystem">Movie System</a>
+                    </li>
+                    <li class="list-group-item"><i class="fa-regular fa-square-minus"></i> <a
+                            class="text-decoration-none text-success"
+                            href="./projects/Minesweeper/index.html">Minesweeper</a></li>
+                    <li class="list-group-item"><i class="fa-regular fa-square-minus"></i> <a
+                            class="text-decoration-none text-success" href="./projects/BetterYouTube/index.html">Better
+                            YouTube</a>
+                    </li>
+                    <li class="list-group-item"><i class="fa-regular fa-square-minus"></i> <a
+                            class="text-decoration-none text-success" href="https://github.com/vinhngph/Vinz">Discord
+                            Bot</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="contacts">
+            <div class="card-body">
+                <h2 class="card-title">Contacts</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-envelope"></i> <a class="text-decoration-none"
+                            href="mailto:contact@nguyenphucvinh.io.vn">contact@nguyenphucvinh.io.vn</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-brands fa-github"></i> <a class="text-decoration-none"
+                            href="https://github.com/vinhngph">github.com/vinhngph</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
