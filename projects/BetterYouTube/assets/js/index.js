@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) => {
         link = "https://www.youtube-nocookie.com/embed/" + input.split('/').pop() + "?autoplay=1";
     }
 
-    const iframe = `<iframe class="rounded yt-iframe" src="${link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="no-referrer" allowfullscreen></iframe>`;
+    const iframe = `<iframe class="rounded yt-iframe" src="${link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 
     document.querySelector('.player').innerHTML = iframe;
 
