@@ -220,10 +220,6 @@ section {
 }
 
 /* Projects Section */
-.projects {
-    background-color: var(--bg-secondary);
-}
-
 .project-img {
     width: 100%;
     height: 200px;
