@@ -20,9 +20,19 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family:
+        "Roboto",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 h1,
@@ -63,7 +73,7 @@ section {
 }
 
 .section-title::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -204,8 +214,12 @@ section {
 
 /* About Section */
 .about-img {
-    border-radius: 8px;
-    overflow: hidden;
+    width: 45%;
+    max-width: 300px;
+}
+
+.about-text {
+    font-size: 17px;
 }
 
 .skill-tag {
@@ -284,7 +298,11 @@ footer {
     position: absolute;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(100, 255, 218, 0.1) 0%, rgba(100, 255, 218, 0) 70%);
+    background: radial-gradient(
+        circle,
+        rgba(100, 255, 218, 0.1) 0%,
+        rgba(100, 255, 218, 0) 70%
+    );
     border-radius: 50%;
     filter: blur(80px);
     z-index: -1;
@@ -333,6 +351,10 @@ footer {
 @media (max-width: 992px) {
     .hero-title {
         font-size: 3.5rem;
+    }
+    .about-img {
+        width: 33.333333%;
+        max-width: 280px;
     }
 }
 

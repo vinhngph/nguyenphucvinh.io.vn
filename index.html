@@ -132,16 +132,33 @@
         <section id="about" class="about">
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">About</h2>
-                <div class="row gy-4">
-                    <div class="col-lg-9" data-aos="fade-right">
-                        <p>
+
+                <div
+                    class="clearfix d-block d-lg-flex align-items-lg-center gap-lg-5"
+                >
+                    <div
+                        class="about-img float-start float-lg-none mb-2 me-3 me-lg-0 order-lg-2 text-center"
+                        data-aos="fade-left"
+                    >
+                        <img
+                            src="./assets/img/avatar.svg"
+                            alt="Portfolio's author"
+                            class="img-fluid rounded-4 shadow w-100"
+                        />
+                    </div>
+
+                    <div
+                        class="about-text order-lg-1 flex-lg-grow-1"
+                        data-aos="fade-right"
+                    >
+                        <p class="text-justify">
                             I am Nguyễn Phúc Vinh, a student majoring in Network
                             Engineering at the Ho Chi Minh City International
                             University. I have built a strong foundation in both
                             software development and computer networking through
                             academic training and hands-on projects.
                         </p>
-                        <p>
+                        <p class="text-justify">
                             My technical skills include proficiency in Java,
                             Python, JavaScript, Go, and Node.js, along with
                             experience using Docker, Git, Linux, and AWS. I am
@@ -149,13 +166,15 @@
                             enjoy working in collaborative, fast-paced
                             environments.
                         </p>
-                        <p>
+                        <p class="text-justify">
                             I am currently looking for an opportunity as a
                             Backend or Full-stack Developer to apply my skills,
                             gain real-world experience, and contribute to
                             impactful technology solutions.
                         </p>
-                        <div class="skills">
+                        <div
+                            class="skills d-flex flex-wrap gap-2 justify-content-start mt-3"
+                        >
                             <span class="skill-tag">Java</span>
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">JavaScript</span>
@@ -165,17 +184,6 @@
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">Linux</span>
                             <span class="skill-tag">AWS</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3" data-aos="fade-left">
-                        <div class="about-img">
-                            <img
-                                src="./assets/img/avatar.svg"
-                                alt="Portfolio's author"
-                                class="img-fluid rounded"
-                                width="350"
-                                height="350"
-                            />
                         </div>
                     </div>
                 </div>
@@ -405,15 +413,17 @@
                 </h2>
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <div class="contact-form text-center">
-                            <div class="row g-4">
-                                <div class="col-6" data-aos="fade-up">
-                                    <div class="contact-method">
+                        <div class="contact-form text-center p-4 rounded">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-12 col-sm-6" data-aos="fade-up">
+                                    <div
+                                        class="contact-method d-flex flex-column align-items-center"
+                                    >
                                         <i
                                             class="fas fa-envelope fa-2x text-accent mb-3"
                                         ></i>
                                         <h4 class="mb-2">Mail</h4>
-                                        <p>
+                                        <p class="text-break text-center w-100">
                                             <a
                                                 href="mailto:contact@nguyenphucvinh.io.vn"
                                                 class="text-accent"
@@ -422,17 +432,13 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div
-                                    class="col-6"
-                                    data-aos="fade-up"
-                                    data-aos-delay="100"
-                                >
+                                <div class="col-12 col-sm-6" data-aos="fade-up">
                                     <div class="contact-method">
                                         <i
                                             class="fab fa-github fa-2x text-accent mb-3"
                                         ></i>
                                         <h4 class="mb-2">GitHub</h4>
-                                        <p>
+                                        <p class="text-break text-center w-100">
                                             <a
                                                 href="https://github.com/vinhngph"
                                                 class="text-accent"
