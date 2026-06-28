@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+@theme {
+  /* Colors */
+  --color-void: #050814;
+  --color-abyss: #0a0f2e;
+  --color-accent-blue: #4f6ef7;
+  --color-accent-violet: #8b5cf6;
+  --color-text-primary: #e2e8ff;
+  --color-text-muted: #6b7cb5;
+  --color-glass-border: rgba(79, 110, 247, 0.18);
+
+  /* Fonts */
+  --font-mono: "JetBrainsMono", monospace;
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "SourceSerif4", serif;
+
+  /* Utilities */
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+}
+
+/* 2. Base Layer: Font face + HTML Elements */
 @layer base {
   @font-face {
     font-family: "JetBrainsMono";
@@ -51,10 +71,138 @@
     font-style: italic;
     font-display: swap;
   }
+
+  /* Base Variables & Element Styles */
+  :root {
+    --glass-bg: rgba(10, 15, 46, 0.55);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-void);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: rgba(79, 110, 247, 0.3);
+    color: var(--color-text-primary);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-void);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(79, 110, 247, 0.4);
+    border-radius: 2px;
+  }
 }
 
-@theme {
-  --font-mono: "JetBrainsMono";
-  --font-sans: "Inter";
-  --font-serif: "SourceSerif4";
+/* 3. Custom Components */
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--color-glass-border);
+    border-radius: 16px;
+  }
+
+  .glass-subtle {
+    background: rgba(10, 15, 46, 0.35);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(79, 110, 247, 0.1);
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      var(--color-accent-blue) 0%,
+      var(--color-accent-violet) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-accent-blue);
+    opacity: 0.8;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    background: linear-gradient(
+      135deg,
+      var(--color-accent-blue) 0%,
+      #7c5cde 100%
+    );
+    color: #fff;
+    border-radius: 8px;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(79, 110, 247, 0.4);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    background: transparent;
+    color: var(--color-text-muted);
+    border-radius: 8px;
+    border: 1px solid rgba(107, 124, 181, 0.3);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+
+  .btn-ghost:hover {
+    border-color: rgba(79, 110, 247, 0.5);
+    color: var(--color-text-primary);
+    background: rgba(79, 110, 247, 0.08);
+  }
+}
+
+/* 4. GSAP initial states */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(32px);
 }
