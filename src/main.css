@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "JetBrainsMono";
+    src: url("./assets/fonts/JetBrainsMono/JetBrainsMono.ttf")
+      format("truetype");
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "JetBrainsMono";
+    src: url("./assets/fonts/JetBrainsMono/JetBrainsMono-Italic.ttf")
+      format("truetype");
+    font-weight: 100 800;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter/Inter.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter/Inter-Italic.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "SourceSerif4";
+    src: url("./assets/fonts/SourceSerif4/SourceSerif4.ttf") format("truetype");
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "SourceSerif4";
+    src: url("./assets/fonts/SourceSerif4/SourceSerif4-Italic.ttf")
+      format("truetype");
+    font-weight: 200 900;
+    font-style: italic;
+    font-display: swap;
+  }
+}
+
+@theme {
+  --font-mono: "JetBrainsMono";
+  --font-sans: "Inter";
+  --font-serif: "SourceSerif4";
+}
