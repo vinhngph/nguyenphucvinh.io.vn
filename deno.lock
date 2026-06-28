@@ -2,6 +2,7 @@
   "version": "5",
   "specifiers": {
     "npm:@eslint/js@^10.0.1": "10.0.1_eslint@10.6.0",
+    "npm:@gsap/react@^2.1.2": "2.1.2_gsap@3.15.0_react@19.2.7",
     "npm:@tailwindcss/vite@^4.3.1": "4.3.1_vite@8.1.0__@types+node@24.13.2",
     "npm:@types/node@^24.13.2": "24.13.2",
     "npm:@types/react-dom@^19.2.3": "19.2.3_@types+react@19.2.17",
@@ -11,6 +12,7 @@
     "npm:eslint-plugin-react-refresh@~0.5.3": "0.5.3_eslint@10.6.0",
     "npm:eslint@^10.5.0": "10.6.0",
     "npm:globals@^17.6.0": "17.7.0",
+    "npm:gsap@^3.15.0": "3.15.0",
     "npm:lucide-react@^1.21.0": "1.21.0_react@19.2.7",
     "npm:react-dom@^19.2.7": "19.2.7_react@19.2.7",
     "npm:react@^19.2.7": "19.2.7",
@@ -207,6 +209,13 @@
       "dependencies": [
         "@eslint/core",
         "levn"
+      ]
+    },
+    "@gsap/react@2.1.2_gsap@3.15.0_react@19.2.7": {
+      "integrity": "sha512-JqliybO1837UcgH2hVOM4VO+38APk3ECNrsuSM4MuXp+rbf+/2IG2K1YJiqfTcXQHH7XlA0m3ykniFYstfq0Iw==",
+      "dependencies": [
+        "gsap",
+        "react"
       ]
     },
     "@humanfs/core@0.19.2": {
@@ -830,6 +839,9 @@
     "graceful-fs@4.2.11": {
       "integrity": "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="
     },
+    "gsap@3.15.0": {
+      "integrity": "sha512-dMW4CWBTUK1AEEDeZc1g4xpPGIrSf9fJF960qbTZmN/QwZIWY5wgliS6JWl9/25fpTGJrMRtSjGtOmPnfjZB+A=="
+    },
     "hermes-estree@0.25.1": {
       "integrity": "sha512-0wUoCcLp+5Ev5pDW2OriHC2MJCbwLwuRx+gAqMTOkGKJJiBCLjtrvy4PWUGn6MIVefecRpzoOZ/UV6iGdOr+Cw=="
     },
@@ -1241,6 +1253,7 @@
     "packageJson": {
       "dependencies": [
         "npm:@eslint/js@^10.0.1",
+        "npm:@gsap/react@^2.1.2",
         "npm:@tailwindcss/vite@^4.3.1",
         "npm:@types/node@^24.13.2",
         "npm:@types/react-dom@^19.2.3",
@@ -1250,6 +1263,7 @@
         "npm:eslint-plugin-react-refresh@~0.5.3",
         "npm:eslint@^10.5.0",
         "npm:globals@^17.6.0",
+        "npm:gsap@^3.15.0",
         "npm:lucide-react@^1.21.0",
         "npm:react-dom@^19.2.7",
         "npm:react@^19.2.7",
