@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "JetBrainsMono";
+    src: url("../../assets/fonts/JetBrainsMono/JetBrainsMono.ttf")
+      format("truetype");
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "JetBrainsMono";
+    src: url("../../assets/fonts/JetBrainsMono/JetBrainsMono-Italic.ttf")
+      format("truetype");
+    font-weight: 100 800;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Merriweather";
+    src: url("../../assets/fonts/Merriweather/Merriweather.ttf")
+      format("truetype");
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Merriweather";
+    src: url("../../assets/fonts/Merriweather/Merriweather-Italic.ttf")
+      format("truetype");
+    font-weight: 300 900;
+    font-style: italic;
+    font-display: swap;
+  }
+}
+
+@theme {
+  --font-mono: "JetBrainsMono", monospace;
+  --font-sans: "Merriweather", sans-serif;
+}
