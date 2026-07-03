@@ -44,6 +44,7 @@
 
   --color-paper: #f7f6f1;
   --color-ink: #15171b;
+  --color-signal: #2f6659;
 }
 
 @layer base {
