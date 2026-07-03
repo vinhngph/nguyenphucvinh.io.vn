@@ -51,4 +51,14 @@
   html {
     background-color: var(--color-paper);
   }
+
+  @keyframes seal-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .seal-rotate {
+    animation: seal-spin 48s linear infinite;
+  }
 }
