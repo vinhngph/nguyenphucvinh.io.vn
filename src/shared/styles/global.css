@@ -43,6 +43,7 @@
   --font-serif: "Merriweather", serif;
 
   --color-paper: #f7f6f1;
+  --color-ink: #15171b;
 }
 
 @layer base {
