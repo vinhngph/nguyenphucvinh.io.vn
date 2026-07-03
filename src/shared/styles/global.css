@@ -41,4 +41,12 @@
 @theme {
   --font-mono: "JetBrainsMono", monospace;
   --font-serif: "Merriweather", serif;
+
+  --color-paper: #f7f6f1;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-paper);
+  }
 }
