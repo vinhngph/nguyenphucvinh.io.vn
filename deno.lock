@@ -7,9 +7,9 @@
     "npm:@types/react@^19.2.17": "19.2.17",
     "npm:eslint-config-next@16.2.10": "16.2.10_eslint@9.39.5_typescript@5.9.3",
     "npm:eslint@^9.39.5": "9.39.5",
-    "npm:next@^16.2.10": "16.2.10_react@19.2.4_react-dom@19.2.4__react@19.2.4",
-    "npm:react-dom@19.2.4": "19.2.4_react@19.2.4",
-    "npm:react@19.2.4": "19.2.4",
+    "npm:next@^16.2.10": "16.2.10_react@19.2.7_react-dom@19.2.7__react@19.2.7",
+    "npm:react-dom@^19.2.7": "19.2.7_react@19.2.7",
+    "npm:react@^19.2.7": "19.2.7",
     "npm:tailwindcss@^4.3.2": "4.3.2",
     "npm:typescript@^5.9.3": "5.9.3"
   },
@@ -2139,7 +2139,7 @@
     "natural-compare@1.4.0": {
       "integrity": "sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw=="
     },
-    "next@16.2.10_react@19.2.4_react-dom@19.2.4__react@19.2.4": {
+    "next@16.2.10_react@19.2.7_react-dom@19.2.7__react@19.2.7": {
       "integrity": "sha512-2som5AVXb3kE6Yjine3/mNbBayYF58eguBWIVVUdr1y/L426xyVEgYxgBG+1QC34P2x5E+tcDup6XkuOAX3dCA==",
       "dependencies": [
         "@next/env",
@@ -2314,8 +2314,8 @@
     "queue-microtask@1.2.3": {
       "integrity": "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A=="
     },
-    "react-dom@19.2.4_react@19.2.4": {
-      "integrity": "sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==",
+    "react-dom@19.2.7_react@19.2.7": {
+      "integrity": "sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==",
       "dependencies": [
         "react",
         "scheduler"
@@ -2324,8 +2324,8 @@
     "react-is@16.13.1": {
       "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
     },
-    "react@19.2.4": {
-      "integrity": "sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ=="
+    "react@19.2.7": {
+      "integrity": "sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ=="
     },
     "reflect.getprototypeof@1.0.10": {
       "integrity": "sha512-00o4I+DVrefhv+nX0ulyi3biSHCPDe+yLv5o/p6d/UVlirijB8E16FtfwSAi4g3tcqrQ4lRAqQSoFEZJehYEcw==",
@@ -2604,7 +2604,7 @@
     "strip-json-comments@3.1.1": {
       "integrity": "sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig=="
     },
-    "styled-jsx@5.1.6_react@19.2.4": {
+    "styled-jsx@5.1.6_react@19.2.7": {
       "integrity": "sha512-qSVyDTeMotdvQYoHWLNGwRFJHC+i+ZvdBRYosOFgC+Wg1vx4frN2/RG/NA7SYqqvKNLf39P2LSRA2pu6n0XYZA==",
       "dependencies": [
         "client-only",
@@ -2862,8 +2862,8 @@
         "npm:eslint-config-next@16.2.10",
         "npm:eslint@^9.39.5",
         "npm:next@^16.2.10",
-        "npm:react-dom@19.2.4",
-        "npm:react@19.2.4",
+        "npm:react-dom@^19.2.7",
+        "npm:react@^19.2.7",
         "npm:tailwindcss@^4.3.2",
         "npm:typescript@^5.9.3"
       ],
